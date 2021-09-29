@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Doom Emacs</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-12 col-md-6">
+            <h1>Doom Emacs</h1>
+            <p class="text-muted">Un framework de configuración para GNU Emacs.</p>
+        </div>
+        <div class="col">
+            <img alt="Doom Emacs Home" src="https://i.ibb.co/gdJ9GDK/2021-09-22-21-08.png">
+        </div>
+    </div>
+
+    <div class="row pt-5">
+        <div class="col-12 col-md-4 mt-3">
+            <p class="text-muted">Es una historia tan antigua como el tiempo. Un vimmer testarudo, inquietante y
+                melodramático, envidioso de las características de los editores de texto modernos, se desespera antes de
+                sucumbir al lado oscuro. Esta es su configuración.</p>
+            <a class="btn btn-dark" href="https://github.com/hlissner/doom-emacs" role="button">¡Instala Doom Emacs
+                ya!</a>
+        </div>
+        <div class="col-12 col-md-4 mt-3">
+            <h6>Ofrece features como:</h6>
+            <ul class="list-group">
+                <li class="list-group-item">Bonitos looks minimalistas inspirados en editores modernos.</li>
+                <li class="list-group-item">Emulación vim opcional impulsada por el modo malvado.</li>
+                <li class="list-group-item">Una estructura organizativa modular para separar preocupaciones en su
+                    configuración.
+                </li>
+                <li class="list-group-item">Espacios de trabajo aislados y persistentes (también sustituye a las
+                    pestañas vim).
+                </li>
+                <li class="list-group-item">Soporte para muchas herramientas, como docker, pass, ansible, terraform y
+                    más.
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-md-4 mt-3 mr-3">
+            <p class="text-muted">Doom es un marco de configuración para <a href="https://www.gnu.org/software/emacs/">GNU
+                Emacs</a> diseñado para los veteranos de la quiebra de Emacs que
+                quieren menos marco en sus marcos, un mínimo de estabilidad (y reproducibilidad) de su administrador de
+                paquetes y el rendimiento de una configuración hecha a mano (o mejor). Puede ser una base para su propia
+                configuración o un recurso para que los entusiastas de Emacs aprendan más sobre nuestro sistema
+                operativo favorito.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row py-5 mt-5 footer">
+    <div class="col px-5">
+        <h3>Suscríbete a nuestro boletín informativo de Emacs</h3>
+        <div class="mb-4">
+            <label class="form-label" for="newsletter">Email</label>
+            <input class="form-control" id="newsletter" placeholder="name@example.com" type="email">
+        </div>
+        <div class="mb-4">
+            <label class="form-label" for="name">Nombre</label>
+            <input class="form-control" id="name" placeholder="Developer Name" type="text">
+        </div>
+        <button class="btn btn-light">Sucribir</button>
+    </div>
+</div>
+</body>
+<style>
+    img, .btn {
+        width: 100%;
+        border-radius: 5%;
+    }
+
+    p, h1 {
+        text-align: center;
+    }
+
+    .footer {
+        background-color: #242837;
+        color: white;
+    }
+
+    @media only screen and (max-width: 600px) {
+        p, h1 {
+            text-align: justify !important;
+        }
+    }
+</style>
+</html>
