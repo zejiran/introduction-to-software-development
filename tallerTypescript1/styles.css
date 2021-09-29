@@ -1,0 +1,15 @@
+.container {
+    padding: 5% 0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1, h2, img {
+    margin: 2.5% 0 5%;
+}
+
+.card {
+    padding: 2.5%;
+}
