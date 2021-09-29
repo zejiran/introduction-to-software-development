@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller 1</title>
+    <title>Taller 2</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Juan Alegría</h1>
+                <h1 id="name"></h1>
                 <img class="img-fluid max-width: 100% height: auto" src="https://i.ibb.co/PM927qd/profile.jpg"
                     height="300px" width="300px" alt="Avatar">
                 <div class="card">
@@ -23,23 +23,23 @@
                         <tbody>
                             <tr>
                                 <td>Código</td>
-                                <td>202011282</td>
+                                <td id="code"></td>
                             </tr>
                             <tr>
                                 <td>Cédula</td>
-                                <td>XXXXXXXXX</td>
+                                <td id="document-number"></td>
                             </tr>
                             <tr>
                                 <td>Edad</td>
-                                <td>19 Años</td>
+                                <td id="age"></td>
                             </tr>
                             <tr>
                                 <td>Dirección</td>
-                                <td>Calle del cuadrante 14 #8A</td>
+                                <td id="address"></td>
                             </tr>
                             <tr>
                                 <td>Teléfono</td>
-                                <td>316XXXXX01</td>
+                                <td id="phone-number"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -59,6 +59,19 @@
                             </div>
                         </div>
                     </form>
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="number" class="form-control" id="min-credits" placeholder="Créditos mínimos">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" id="max-credits" placeholder="Créditos máximos">
+                            </div>
+                            <div class="col">
+                                <button type="button" id="button-filterByCredits" class="btn btn-primary">Aplicar</button>
+                            </div>
+                        </div>
+                    </form>
                     <table class="table">
                         <thead class="thead-dark">
                             <tr>
@@ -75,8 +88,9 @@
             </div>
         </div>
     </div>
-    <script type="module" src="./scripts/course.js" ></script>
-    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/student.js"></script>
+    <script type="module" src="./scripts/course.js"></script>
+    <script type="module" src="./scripts/dataCourses.js"></script>
     <script type="module" src="./scripts/main.js"></script>
 </body>
 
