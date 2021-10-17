@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { BookModule } from './book/book.module';
+import { EditorialModule } from './editorial/editorial.module';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { BookModule } from './book/book.module';
   ],
   imports: [
     BrowserModule,
-    BookModule
+    BookModule,
+    EditorialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
