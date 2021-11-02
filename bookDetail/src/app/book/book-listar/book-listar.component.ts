@@ -10,7 +10,7 @@ import { BookService } from "../book.service";
 export class BookListarComponent implements OnInit {
   books: Array<Book> | undefined;
   selected = false;
-  selectedBook: Book | undefined;
+  selectedBook!: Book;
 
   onSelected(b: Book): void {
     this.selected = true;

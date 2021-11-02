@@ -8,6 +8,6 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
     CommonModule
   ],
   declarations: [BookListarComponent, BookDetailComponent],
-  exports: [BookListarComponent],
+  exports: [BookListarComponent, BookDetailComponent],
 })
 export class BookModule { }

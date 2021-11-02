@@ -6,5 +6,8 @@
             <figcaption class="title-caption text-center">{{b.name}}. [{{b.editorial.name}}]</figcaption>
           </figure>
       </div>
+      <div *ngIf="selected">
+        <app-book-detail [bookDetail]="selectedBook"></app-book-detail>
+    </div>
   </div>
 </div>
