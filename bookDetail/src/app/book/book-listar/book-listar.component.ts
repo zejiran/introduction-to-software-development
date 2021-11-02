@@ -9,6 +9,13 @@ import { BookService } from "../book.service";
 })
 export class BookListarComponent implements OnInit {
   books: Array<Book> | undefined;
+  selected = false;
+  selectedBook: Book | undefined;
+
+  onSelected(b: Book): void {
+    this.selected = true;
+    this.selectedBook = b;
+  }
 
   constructor(private bookService: BookService) {
   }
