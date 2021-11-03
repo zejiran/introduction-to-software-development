@@ -12,12 +12,12 @@ export class BookListarComponent implements OnInit {
   selected = false;
   selectedBook!: Book;
 
+  constructor(private bookService: BookService) {
+  }
+
   onSelected(b: Book): void {
     this.selected = true;
     this.selectedBook = b;
-  }
-
-  constructor(private bookService: BookService) {
   }
 
   getBooks(): void {

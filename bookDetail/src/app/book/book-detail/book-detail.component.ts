@@ -10,7 +10,8 @@ export class BookDetailComponent implements OnInit {
 
   @Input() bookDetail!: Book;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
     console.log(this.bookDetail.id);

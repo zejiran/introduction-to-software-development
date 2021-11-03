@@ -10,4 +10,5 @@ import { BookDetailComponent } from './book-detail/book-detail.component';
   declarations: [BookListarComponent, BookDetailComponent],
   exports: [BookListarComponent, BookDetailComponent],
 })
-export class BookModule { }
+export class BookModule {
+}
