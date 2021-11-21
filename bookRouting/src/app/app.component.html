@@ -1,1 +1,15 @@
-<app-book-listar></app-book-listar>
+<div class="navbar-nav mr-auto mt-0">
+  <a id="books-navbar-item" class="nav-item nav-link active" routerLink="/books/list">Books</a>
+  <a id="authors-navbar-item" class="nav-item nav-link" routerLink="/authors/list">Authors</a>
+  <a id="editorials-navbar-item" class="nav-item nav-link" routerLink="/editorials/list">Editorials</a>
+</div>
+
+<div class="container-fluid" id="principal">
+  <div class="row">
+    <div class="col">
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
