@@ -1,0 +1,15 @@
+<div class="row row-cols-2 row-cols-md-4">
+  <div class="col" *ngFor="let p of pets">
+    <div class="card" style="width: 18rem;">
+      <img src="{{p.image}}" class="card-img-top" alt="Pet image">
+      <div class="card-body">
+        <h5 class="card-title">{{p.name}}</h5>
+        <p class="card-text">Tengo
+          <span *ngIf="p.likes > 0;" class="red-like">{{p.likes}}</span>
+          <span *ngIf="p.likes <= 0;">{{p.likes}}</span>
+           "me gusta".</p>
+        <a routerLink="/pets/{{p.id}}"  class="btn btn-info">Conocer más</a>
+      </div>
+    </div>
+  </div>
+</div>
